@@ -1,39 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Micro Shake Popover</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Micro Shake Popover Demo</title>
 
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-<div class="container">
+  <header class="hero">
+    <h1>CSS Micro Shake Popover</h1>
+    <p>
+      Pure CSS popover examples with subtle micro shake animation.
+    </p>
+  </header>
 
-<div class="popover">
+  <main class="demo-grid">
 
-<button class="trigger">
-✨ Hover Me
-</button>
+    <!-- Example 1 -->
+    <section class="card">
+      <h2>Primary Button</h2>
 
-<div class="card">
+      <div class="popover-wrapper">
 
-<h2>Glassmorphism UI</h2>
+        <button
+          class="popover-trigger"
+          aria-describedby="popover-1">
+          Hover Me
+        </button>
 
-<p>
-A lightweight CSS popover with a subtle micro-shake animation and frosted-glass styling.
-</p>
+        <div
+          id="popover-1"
+          class="popover"
+          role="tooltip">
 
-<a href="#">Explore →</a>
+          Perfect for onboarding tips and quick information.
+        </div>
 
-</div>
+      </div>
+    </section>
 
-</div>
+    <!-- Example 2 -->
 
-</div>
+    <section class="card">
+      <h2>Info Icon</h2>
+
+      <div class="popover-wrapper">
+
+        <button
+          class="popover-trigger icon-button"
+          aria-describedby="popover-2">
+
+          ⓘ
+        </button>
+
+        <div
+          id="popover-2"
+          class="popover"
+          role="tooltip">
+
+          Additional details shown with a subtle micro shake.
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Example 3 -->
+
+    <section class="card">
+
+      <h2>Custom Shake</h2>
+
+      <div
+        class="popover-wrapper strong-shake">
+
+        <button
+          class="popover-trigger"
+          aria-describedby="popover-3">
+
+          Stronger Shake
+        </button>
+
+        <div
+          id="popover-3"
+          class="popover"
+          role="tooltip">
+
+          This example uses a larger shake distance.
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Example 4 -->
+
+    <section class="card dark-card">
+
+      <h2>Dark Theme</h2>
+
+      <div class="popover-wrapper dark-theme">
+
+        <button
+          class="popover-trigger"
+          aria-describedby="popover-4">
+
+          Dark Popover
+        </button>
+
+        <div
+          id="popover-4"
+          class="popover"
+          role="tooltip">
+
+          Styled using CSS custom properties.
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
 
 </body>
 </html>
